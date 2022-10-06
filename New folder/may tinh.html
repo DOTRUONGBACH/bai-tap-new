@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center"; style="background: aquamarine" >
+<h1 style="color: red">Máy tính siêu thông minh-Bach</h1>
+<table>
+  <tr>
+    <td><input id="a" type="number" placeholder="nhập số đi cháu"></td>
+    <td><input id="b" type="number" placeholder="nhập số đi cháu"></td>
+    <td><button type=button onclick="cong()">+</button></td>
+    <td><button type=button onclick="tru()">-</button></td>
+    <td><button type=button onclick="nhan()">*</button></td>
+    <td><button type=button onclick="chia()">/</button></td>
+
+  </tr>
+  <tr>
+    <td>KẾT QUẢ</td><td><p id="ok"></p></td>
+  </tr>
+  <tr></tr>
+</table>
+<script>
+  function cong() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let tong = a + b
+    document.getElementById("ok").innerHTML="="+tong
+  }
+  function tru() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let hieu = a - b
+    document.getElementById("ok").innerHTML="="+hieu
+  }
+  function nhan() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let tich = a * b
+    document.getElementById("ok").innerHTML="="+tich
+  }
+  function chia() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let thuong = a / b
+    document.getElementById("ok").innerHTML= "="+thuong
+  }
+
+</script></div>
+</body>
+</html>

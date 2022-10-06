@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: left">Bảng điểm</h1>
+<table>
+    <Tr>
+        <th>Vật lý</th>
+        <th>Hóa học</th>
+        <th>Sinh học</th>
+        <th>Tổng điểm</th>
+    </Tr>
+    <tr>
+        <td><input id="a" type="number"></td>
+        <td><input id="b" type="number"></td>
+        <td><input id="c" type="number"></td>
+        <td>
+            <button type=button onclick="tong()">ấn để xem</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Điểm trung bình</td>
+        <td>
+            <button type="button"onclick="tongtb()">ấn để xem</button>
+        </td>
+    </tr>
+</table>
+<script> function tong() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let c = parseInt(document.getElementById("c").value);
+    let tong = a + b + c
+    alert(tong)
+}
+function tongtb() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let c = parseInt(document.getElementById("c").value);
+    let tongtb = (a + b + c)/3
+    alert(tongtb)
+}
+
+
+</script>
+</body>
+</html>
