@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>TEST SỐ CHẴN LẺ</h1>
+<table>
+  <tr>
+    <td><input id="a" type="number" placeholder="Nhập số"></td>
+    <td><button onclick="an()" >Get</button></td>
+
+  </tr>
+</table>
+<p id="cc"></p>
+<script>
+  function an()
+  {
+    let y = parseInt(document.getElementById("a").value)
+    if
+        (y%2==0){document.getElementById("cc").innerHTML=("SỐ" + y + "LÀ SỐ CHẴN")}
+      else {document.getElementById("cc").innerHTML=("SỐ"+ y + "LÀ SỐ LẺ")
+    }}
+</script>
+</body>
+</html>
